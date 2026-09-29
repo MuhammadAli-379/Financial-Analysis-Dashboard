@@ -1697,6 +1697,7 @@ button[data-baseweb="tab"][aria-selected="true"] {
     --purple: #9b8cff;
 }
 
+ st.markdown("""
 .stApp {
     background:
         radial-gradient(
@@ -1738,7 +1739,8 @@ button[data-baseweb="tab"][aria-selected="true"] {
 [data-testid="stMetricValue"] *,
 [data-testid="stMetricLabel"] * {
     color: var(--text) !important;
-}
+}</style>
+""", unsafe_allow_html=True)
 
 
 /* =========================================================
