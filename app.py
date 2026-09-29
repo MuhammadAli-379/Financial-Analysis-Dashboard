@@ -1747,7 +1747,11 @@ button[data-baseweb="tab"][aria-selected="true"] {
    SIDEBAR
    ========================================================= */
 
-[data-testid="stSidebar"] {
+[data-testid="stSidebar"]
+
+st.markdown("""
+<style>
+.card {
     background:
         linear-gradient(
             180deg,
@@ -1813,7 +1817,8 @@ button[data-baseweb="tab"][aria-selected="true"] {
 [data-testid="stSidebar"] hr {
     border-color: #1b344a !important;
 }
-
+</style>
+""")
 
 /* =========================================================
    NAVIGATION
