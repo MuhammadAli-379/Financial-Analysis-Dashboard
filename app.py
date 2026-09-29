@@ -10,13 +10,20 @@ st.markdown('''<style>
 .hero{padding:1.2rem 1.5rem;border:1px solid #20364d;border-radius:16px;background:linear-gradient(135deg,#11243a,#0c1c2e);margin-bottom:1rem}
 .warning{border-left:4px solid #ffd166;background:#201c0a;padding:.7rem 1rem;border-radius:10px;color:#f6e6a9;font-size:.9rem}
 .card{border:1px solid #20364d;border-radius:12px;padding:1rem;background:#0d1b2e;margin-bottom:.5rem}
+.stApp,.stApp p,.stApp label,.stApp li,.stApp h1,.stApp h2,.stApp h3,.stApp h4,.stApp span,[data-testid="stMarkdownContainer"] *,[data-testid="stCaptionContainer"] *,[data-testid="stMetricValue"] *,[data-testid="stMetricLabel"] *{color:#eaf2fb !important}
+[data-testid="stHeader"]{background:#07111f !important}[data-testid="stHeader"] *{color:#9fb6cc !important;fill:#9fb6cc !important}
+[data-testid="stSidebar"] *{color:#eaf2fb !important}
+[data-baseweb="select"]>div,[data-baseweb="input"],[data-baseweb="base-input"],input,textarea{background:#0d1b2e !important;color:#eaf2fb !important;border-color:#20364d !important}
+[data-baseweb="select"] *{color:#eaf2fb !important;background:transparent !important}
+[data-baseweb="popover"] *{background:#0d1b2e !important;color:#eaf2fb !important}
 div[role="radiogroup"]{gap:.4rem;flex-wrap:wrap}
-div[role="radiogroup"]>label{background:#0d1b2e;border:1px solid #20364d;border-radius:999px;padding:.25rem .85rem;margin:0;cursor:pointer}
-div[role="radiogroup"]>label:hover{border-color:#5cc8ff}
-div[role="radiogroup"]>label>div:first-child{display:none}
-div[role="radiogroup"]>label:has(input:checked){background:#5cc8ff;border-color:#5cc8ff}
-div[role="radiogroup"]>label:has(input:checked) p{color:#07111f;font-weight:700}
-div[role="radiogroup"] p{font-size:.85rem;margin:0}
+label[data-baseweb="radio"]{background:#0d1b2e;border:1px solid #20364d;border-radius:999px;padding:.25rem .9rem;margin:0 !important;cursor:pointer}
+label[data-baseweb="radio"]:hover{border-color:#5cc8ff}
+label[data-baseweb="radio"]>div:first-child{display:none !important}
+label[data-baseweb="radio"]:has(input:checked){background:#5cc8ff !important;border-color:#5cc8ff}
+label[data-baseweb="radio"]:has(input:checked) *{color:#07111f !important;font-weight:700}
+label[data-baseweb="radio"] p{font-size:.85rem;margin:0}
+.hero .warning,.hero .warning *{color:#f6e6a9 !important}.hero b[style]{color:#5cc8ff !important}
 [data-testid="stMetric"]{background:#0d1b2e;border:1px solid #20364d;border-radius:12px;padding:.6rem .9rem}
 </style>''', unsafe_allow_html=True)
 
